@@ -16,6 +16,9 @@ source {name}/bin/activate
 ----------------------------------
 #to check if venv
 sys.prefix == sys.base_prefix
+pip -V
+https://stackoverflow.com/questions/1871549/determine-if-python-is-running-inside-virtualenv
+
 
 #to get out of venv
 deactivate
