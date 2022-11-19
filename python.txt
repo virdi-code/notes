@@ -1,0 +1,25 @@
+#create virtual env
+<python> -m venv {name}
+
+-----------------------------------
+##go into venv
+#windows
+#CMD
+/{name}/Scripts/activate.bat
+
+#Powershell
+/{name}/Scripts/Activate.ps1
+Set-ExecutionPolicy RemoteSigned
+
+#Unix
+source {name}/bin/activate
+----------------------------------
+#to check if venv
+sys.prefix == sys.base_prefix
+
+#to get out of venv
+deactivate
+----------------------------------
+#to clean text
+text = text.encode('utf-8').decode('ascii', 'ignore')
+or .encode('cp1252',errors='ignore')
